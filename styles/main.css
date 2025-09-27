@@ -5,6 +5,7 @@ body {
 .bg-main {
   background-color: #234c6a;
 }
+
 .bg-secondary {
   background-color: #d2c1b6;
 }
@@ -16,10 +17,12 @@ body {
 .secondary {
   background-color: #456882 !important;
 }
+
 li {
   margin-top: 2px;
   margin-bottom: 2px;
 }
+
 .image-container {
   height: 200px;
   width: 200px;
@@ -31,17 +34,20 @@ hr {
   height: 5px;
 }
 
-
-
 /* Navs and Tabs Section */
 .nav {
   --bs-nav-link-color: #d2c1b6 !important;
   --bs-nav-link-hover-color: #92867e !important;
 }
 .nav-tabs {
-  
   --bs-border-color: #234c6a !important;
   --bs-nav-tabs-link-active-bg: #d2c1b6 !important;
   --bs-nav-tabs-link-active-border-color: #d2c1b6 !important;
   border-bottom: var(--bs-nav-tabs-border-width) solid #d2c1b6 !important;
+}
+
+/* Selection Style */
+::selection {
+  color: #234c6a;
+  background: #d2c1b6;
 }
