@@ -51,3 +51,17 @@ hr {
   color: #234c6a;
   background: #d2c1b6;
 }
+
+/* Cards section */
+
+.card {
+  overflow: hidden;
+}
+
+.card img {
+  transition: all 0.3s;
+}
+
+.card img:hover {
+  scale: 1.1;
+}

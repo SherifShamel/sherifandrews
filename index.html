@@ -95,6 +95,7 @@
 
                     <!-- tabs -->
                     <div class="tab-content" id="myTabContent">
+                        <!-- Experience Section -->
                         <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel"
                             aria-labelledby="home-tab" tabindex="0">
                             <h2 class="main-text">Professional Experience</h2>
@@ -168,45 +169,195 @@
                                 </ul>
                             </div>
                         </div>
+                        <!-- Projects Section -->
                         <div class="tab-pane fade" id="projects-tab-pane" role="tabpanel" aria-labelledby="projects-tab"
                             tabindex="0">
                             <h2 class="main-text">Projects</h2>
-                            <div class="text-start text-white my-2">
-                                <h3 class="mb-0"><a href="#" class="main-text">Free To Play Games</a> - HTML, CSS, JS +
-                                    Rest API</h3>
-                                <ul>
-                                    <li>
-                                        Developed a dynamic site fetching real-time free-to-play games via external
-                                        APIs.
-                                    </li>
-                                    <li>
-                                        Implemented OOP principles for modular and scalable code.
-                                    </li>
-                                </ul>
+                            <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+                                <!-- wordpress Nav item -->
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="wordpress-tab" data-bs-toggle="tab"
+                                        data-bs-target="#wordpress-tab-pane" type="button" role="tab"
+                                        aria-controls="wordpress-tab-pane" aria-selected="true">Wordpress
+                                        Projects</button>
+                                </li>
+                                <!-- Native Nav item -->
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="native-tab" data-bs-toggle="tab"
+                                        data-bs-target="#native-tab-pane" type="button" role="tab"
+                                        aria-controls="native-tab-pane" aria-selected="false">Native Projects</button>
+                                </li>
+                                <!-- Framework Nav Item -->
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="framework" data-bs-toggle="tab"
+                                        data-bs-target="#framework-pane" type="button" role="tab"
+                                        aria-controls="framework-pane" aria-selected="false">Framework</button>
+                                </li>
+
+                            </ul>
+                            <div class="tab-content" id="myTabContent">
+                                <!-- Wordpress Content -->
+                                <div class="tab-pane fade show active" id="wordpress-tab-pane" role="tabpanel"
+                                    aria-labelledby="wordpress-tab" tabindex="0">
+                                    <div
+                                        class="d-flex flex-column flex-xl-row gap-3 justify-content-evenly align-items-center">
+                                        <div class="card bg-transparent p-2">
+                                            <div class="position-relative">
+                                                <img src="./assets/images/image.png" class="card-img-top"
+                                                    alt="holoul cms company">
+                                            </div>
+                                            <div class="card-body my-2">
+                                                <h5 class="card-title main-text">CMS - Holoul</h5>
+                                                <p class="card-text text-white">A CMS Website for a company called CMS
+                                                    <br>
+                                                    Specialized in Collections and Telesales
+                                                </p>
+                                                <p>
+                                                    <a href="https://mywordpresssite.lovestoblog.com/" target="_blank"
+                                                        class="main-text">Check Website</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Native Content -->
+                                <div class="tab-pane fade" id="native-tab-pane" role="tabpanel"
+                                    aria-labelledby="native-tab" tabindex="0">
+                                    <p class="my-2">These projects are skills and time progress from latest to earliest
+                                    </p>
+                                    <div class="row g-3">
+                                        <div class="col-sm-12 col-lg-6">
+                                            <div class="card bg-transparent p-2">
+                                                <img src="./assets/images/freetoplay.png" class="card-img"
+                                                    alt="Quote Generator app">
+                                                <div class="card-body my-2">
+                                                    <h5 class="card-title main-text">Free-To-Play_games App</h5>
+                                                    <p class="card-text text-white">This is a full website built using
+                                                        JavaScript and the Free-to-Play Games API. You can browse tons
+                                                        of free games by category, platform, and more
+                                                    </p>
+                                                    <p>
+                                                        <a href="https://playfreegames.vercel.app/" target="_blank"
+                                                            class="main-text">Check Website</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-lg-6">
+                                            <div class="card bg-transparent p-2">
+                                                <img src="./assets/images/weather.png" class="card-img"
+                                                    alt="weather app">
+                                                <div class="card-body my-2">
+                                                    <h5 class="card-title main-text">Weather App</h5>
+                                                    <p class="card-text text-white">Built a real-time weather app
+                                                        integrating a public API.
+                                                        <br>
+                                                        Designed responsive UI with clean code architecture.
+                                                    </p>
+                                                    <p>
+                                                        <a href="https://sherifshamel.github.io/weather_app//"
+                                                            target="_blank" class="main-text">Check Website</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-lg-6">
+                                            <div class="card bg-transparent p-2">
+                                                <img src="./assets/images/quotegenerator.png" class="card-img"
+                                                    alt="Quote Generator app">
+                                                <div class="card-body my-2">
+                                                    <h5 class="card-title main-text">Quote Generator</h5>
+                                                    <p class="card-text text-white">A website build with HTML, CSS, and
+                                                        JS.
+                                                        <br> Generates Random Quotes
+                                                    </p>
+                                                    <p>
+                                                        <a href="https://quotegenerator-kappa.vercel.app/"
+                                                            target="_blank" class="main-text">Check Website</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-lg-6">
+                                            <div class="card bg-transparent p-2">
+                                                <img src="./assets/images/mealify.png" class="card-img"
+                                                    alt="mealify app">
+                                                <div class="card-body my-2">
+                                                    <h5 class="card-title main-text">Mealify</h5>
+                                                    <p class="card-text text-white">Built a real-time weather app
+                                                        integrating a public API.
+                                                    </p>
+                                                    <p>
+                                                        <a href="https://mealify5-six.vercel.app/" target="_blank"
+                                                            class="main-text">Check Website</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-lg-6">
+                                            <div class="card bg-transparent p-2">
+                                                <img src="./assets/images/daniels.png" class="card-img"
+                                                    alt="Daniels portfolio app">
+                                                <div class="card-body my-2">
+                                                    <h5 class="card-title main-text">Daniels</h5>
+                                                    <p class="card-text text-white">Built a real-time weather app
+                                                        integrating a public API.
+                                                        <br>
+                                                        Designed responsive UI with clean code architecture.
+                                                    </p>
+                                                    <p>
+                                                        <a href="https://danielsroutesherifvercel.vercel.app/"
+                                                            target="_blank" class="main-text">Check Website</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-lg-6">
+                                            <div class="card p-2">
+                                                <img src="./assets/images/sherifport.png" class="card-img"
+                                                    alt="Daniels portfolio app">
+                                                <div class="card-body my-2">
+                                                    <h5 class="card-title">Oldest Portfolio</h5>
+                                                    <p class="card-text">This website was the beginning of my
+                                                        journey, by that time, I didn't know what I was doing. I guess
+                                                        now things changed.
+                                                    </p>
+                                                    <p>
+                                                        <a href="https://sherif-port.pages.dev/" target="_blank" class="text-black
+                                                            ">Check Website</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Framework Content -->
+                                <div class="tab-pane fade" id="framework-pane" role="tabpanel"
+                                    aria-labelledby="framework" tabindex="0">
+                                    <div
+                                        class="d-flex flex-column flex-xl-row gap-3 justify-content-evenly align-items-center">
+                                        <div class="card bg-transparent p-2">
+                                            <img src="./assets/images/freshcart.png" class="card-img-top"
+                                                alt="Fresh Cart App">
+                                            <div class="card-body my-2">
+                                                <h5 class="card-title main-text">Fresh Cart App</h5>
+                                                <p class="card-text text-white">A Fully responsive e-commerce website
+                                                    built with Angular Framework.
+                                                    Used Tailwind and TypeScript, RESTfull API.
+                                                    Auth Features.
+                                                </p>
+                                                <p>
+                                                    <a href="https://freshcart-lime.vercel.app" target="_blank"
+                                                        class="main-text">Check Website</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="text-start text-white my-2">
-                                <h3 class="mb-0"><a href="#" class=" main-text">Weather App</a></h3>
-                                <ul>
-                                    <li>
-                                        Built a real-time weather app integrating a public API.
-                                    </li>
-                                    <li>
-                                        Designed responsive UI with clean code architecture.
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="text-start text-white my-2">
-                                <h3 class="mb-0"><a href="#" class=" main-text">Fresh Cart</a></h3>
-                                <ul>
-                                    <li>
-                                        Built a real-time weather app integrating a public API.
-                                    </li>
-                                    <li>
-                                        Designed responsive UI with clean code architecture.
-                                    </li>
-                                </ul>
-                            </div>
+
                         </div>
+                        <!-- Skills Section -->
                         <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab"
                             tabindex="0">
                             <h2 class="main-text">Technical Skills</h2>
