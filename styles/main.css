@@ -2,6 +2,14 @@ body {
   background-color: #1b3c53 !important;
 }
 
+.main-image:hover .my-logo {
+  transform: translateX(-100%);
+}
+.my-logo {
+  transform: translateX(100%);
+  transition: 0.4s;
+}
+
 .bg-main {
   background-color: #234c6a;
 }
