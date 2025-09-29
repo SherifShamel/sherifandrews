@@ -13,6 +13,9 @@ body {
 .main-text {
   color: #d2c1b6 !important;
 }
+.secondary-text {
+  color: #1b3c53 !important;
+}
 
 .secondary {
   background-color: #456882 !important;
@@ -64,4 +67,67 @@ hr {
 
 .card img:hover {
   scale: 1.1;
+}
+
+/* Skills Section */
+.bg-html {
+  background-color: #f54927;
+}
+
+.bg-css {
+  background-color: #00ffff;
+}
+
+.bg-js {
+  background-color: #f7e018;
+}
+
+.bg-ts {
+  background-color: #3178c6;
+}
+
+.bg-angular {
+  background-image: linear-gradient(
+      63deg,
+      transparent 66%,
+      oklch(16.93% 0.004 285.95) 69%,
+      oklch(16.93% 0.004 285.95) 70%,
+      transparent 70%
+    ),
+    linear-gradient(
+      162deg,
+      oklch(16.93% 0.004 285.95) 30%,
+      rgba(147, 55, 245, 0.5411764706) 100%
+    );
+}
+
+.text-angular {
+  color: rgb(246, 55, 227) !important;
+}
+
+.bg-bootstrap {
+  background-color: rgb(109 43 240);
+}
+
+.bg-tailwind {
+  background-color: #030712;
+}
+
+.tailwind-color {
+  color: rgb(0, 188, 255);
+  fill: rgb(0, 188, 255);
+}
+
+.bg-wordpress {
+  background-size: 15px;
+  background-color: rgba(56, 88, 233, 1);
+  background-image: url("https://wordpress.com/wp-content/uploads/2025/07/plus-pattern-white.webp");
+}
+
+.bg-animation {
+  background-color: #fce5cd;
+}
+
+.text-animation {
+  color: #351c75;
 }
