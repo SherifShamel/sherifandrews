@@ -50,6 +50,7 @@ for (let index = 0; index < data.length; index++) {
 // Projects Section
 let wordpressTab = document.querySelector("#wordpressContent");
 let wordpressContent = [];
+
 let nativeTab = document.querySelector("#native-tab");
 let frameworkTab = document.querySelector("#frameworkContent");
 
@@ -131,6 +132,7 @@ for (let index = 0; index < frameworkProjects.length; index++) {
 
                                                    <p class="card-text text-white flex-grow-1">${frameworkProjects[index].description}
                                                    </p>
+                                                   ${frameworkProjects[index].name == "Fresh Cart"? "<p class='card-text text-white fw-bold flex-grow-1'>Credentials for authentication (username: sheriftest@gmail.com, password:123456</p>":""}
                                                    
                                                    <div class="tags-section flex-grow-1">
                                                     <p class="card-text mb-0 text-start fw-bold text-white">tags:</p>
