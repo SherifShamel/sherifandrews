@@ -230,3 +230,12 @@ hr {
   background-color: rgb(108, 117, 125);
   /* color: black; */
 }
+
+#nativeProjects .col-sm-12.col-lg-6:last-child .card{
+  background-color: white !important;
+}
+#nativeProjects .col-sm-12.col-lg-6:last-child h5,
+#nativeProjects .col-sm-12.col-lg-6:last-child p,
+#nativeProjects .col-sm-12.col-lg-6:last-child a {
+  color: #1b3c53 !important;
+}

@@ -51,12 +51,13 @@ for (let index = 0; index < data.length; index++) {
 let wordpressTab = document.querySelector("#wordpressContent");
 let wordpressContent = [];
 
-let nativeTab = document.querySelector("#native-tab");
+let nativeTab = document.querySelector("#nativeProjects");
 let frameworkTab = document.querySelector("#frameworkContent");
 
 let tags = [];
 let wordpressProjects = [];
 let frameworkProjects = [];
+let nativeProjects = [];
 
 // Wordpress projects
 async function getWordpressProjects() {
@@ -88,9 +89,9 @@ for (let index = 0; index < wordpressProjects.length; index++) {
 
                                                    <p class="card-text text-white">${wordpressProjects[index].description}
                                                    </p>
-                                                   <p>
+                                                  <p>
                                                        <a href="${wordpressProjects[index].demo}"
-                                                           target="_blank" class="main-text">View Demo</a>
+                                                           target="_blank" class="demo-link">View Demo</a>
                                                    </p>
                                                    <p class="card-text">tags: ${tags}</p>
                                                </div>
@@ -150,4 +151,38 @@ for (let index = 0; index < frameworkProjects.length; index++) {
   tags = [];
 }
 
+//Native Projects
+async function getNativeProjects() {
+  let data = await fetch(
+    "https://api.jsonbin.io/v3/b/69c3ac1daa77b81da9196585",
+    {
+      headers: {
+        "X-Master-Key":
+          "$2a$10$qIHW.uBjT202MQY9ParQ3uy9HibyOY/o5K/J9ROIp1LXAsAeIL1TG",
+      },
+    },
+  ).then((e) => e.json());
+  return data.record;
+}
+nativeProjects = await getNativeProjects();
+console.log(nativeProjects);
+
+for (let index = 0; index < nativeProjects.length; index++) {
+nativeTab.innerHTML += `<div class="col-sm-12 col-lg-6">
+                                            <div class="card bg-transparent p-2 h-100">
+                                                <img src="${nativeProjects[index].url}" class="card-img"
+                                                    alt="Quote Generator app">
+                                                <div class="card-body my-2">
+                                                    <h5 class="card-title main-text">${nativeProjects[index].name}</h5>
+
+                                                    <p class="card-text text-white">${nativeProjects[index].description}
+                                                    </p>
+                                                   <p>
+                                                       <a href="${nativeProjects[index].demo}"
+                                                           target="_blank" class="demo-link">View Demo</a>
+                                                   </p>
+                                                </div>
+                                            </div>
+                                        </div>`
+}
 // End OfProjects Section
